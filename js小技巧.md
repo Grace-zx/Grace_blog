@@ -197,21 +197,28 @@ Person.call(p,"zhenglijing");
 ### 小技巧
 
 1、计算数组中的最大值，可以用Math.max(...array)；计算数组中最小的值Math.min(…array)
+
 2、可以使用Object.entries(array)将对象转换成该对象所有 [key, value] 键值对的数组，具体结构变为:
 [[key1, value1],[key1, value1],[key1, value1]]
+
 3、数组去重 const arr =[...new Set(array)]
+
 4、过滤数据 const arr = array.filter((item:any)=>item.id)
+
 5、解构数组的完整语法：
 let [item1 = default, item2, ...rest] = array
 数组的第一个元素被赋值给 item1，第二个元素被赋值给 item2，剩下的所有元素被复制到另一个数组 rest。
+
 6、合并变量声明 
 当我们声明多个同类型的变量时，可以像下面这样简写。
  let test1, test2 = 1;
 合并变量赋值 
 当我们处理多个变量并将不同的值分配给不同的变量时。
 短 let [test1, test2, test3] = [1, 2, 3];
+
 7、JSON.stringify 将对象转换为 JSON。
 JSON.parse 将 JSON 转换回对象。
+
 8、阻止事件冒泡、默认行为
 event.stopPropagation(); 
 事件处理过程中，阻止了事件冒泡，但不会阻击默认行为（执行超链接的跳转） 
@@ -282,5 +289,3 @@ let arrMore = [1, 2, [3], [[4]]];
 arrMore = arrMore.flat(Infinity);
 console.log(arrMore);
 ```
-
-222
